@@ -29,8 +29,7 @@ class Dice:
     # it adds that value to the end of the list that tracks all the rolls
     # it returns the value
     def roll(self):
-        #print(self.max_num) 
-        result = random.randint(1, self.max_num)  # inclusive or exclusive? 
+        result = random.randint(1, self.max_num) 
         self.tracking_list.append(result)
         return result
         
